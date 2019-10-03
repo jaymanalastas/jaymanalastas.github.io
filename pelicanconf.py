@@ -10,7 +10,7 @@ PATH = 'content'
 
 TIMEZONE = 'America/New_York'
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'En'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -36,5 +36,7 @@ RELATIVE_URLS = True
 
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATH = './plugins'
+PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
+
+THEME = "themes/atilla"
