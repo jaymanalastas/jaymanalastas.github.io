@@ -1,0 +1,9 @@
+[submodule "plugins/plugins/ipynb"]
+	path = plugins/plugins/ipynb
+	url = git://github.com/danielfrg/pelican-ipynb.git
+[submodule "Flex"]
+	path = Flex
+	url = https://github.com/alexandrevicenzi/Flex.git
+[submodule "themes/atilla"]
+	path = themes/atilla
+	url = https://github.com/arulrajnet/attila.git
