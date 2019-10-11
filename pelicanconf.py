@@ -26,9 +26,16 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'https://github.com/jaymanalastas'),
+          ('email', 'jay.manalastas@outlook.com'),
+	  ('facebook','https://www.facebook.com/johnjay.manalastas'),
+          ('linkedin', 'https://www.linkedin.com/in/jaymanalastas/'),)
 
+BIO = "Analyst looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives."
+
+PROFILE_IMAGE = "https://avatars1.githubusercontent.com/u/49821349?s=400&u=983110f323e6088eec4db28849f3d46e024841bd&v=4"
+
+GITHUB_URL = ('https://github,com/jaymanalastas')
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -39,4 +46,4 @@ MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
 
-THEME = "themes/atilla"
+THEME = "themes/pelican-hyde"

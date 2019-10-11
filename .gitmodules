@@ -10,3 +10,9 @@
 [submodule "plugins/ipynb"]
 	path = plugins/ipynb
 	url = git://github.com/danielfrg/pelican-ipynb.git
+[submodule "themes/themes/pelican-hyde"]
+	path = themes/themes/pelican-hyde
+	url = https://github.com/jvanz/pelican-hyde
+[submodule "themes/pelican-hyde"]
+	path = themes/pelican-hyde
+	url = https://github.com/jvanz/pelican-hyde
