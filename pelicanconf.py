@@ -31,7 +31,7 @@ SOCIAL = (('github', 'https://github.com/jaymanalastas'),
 	  ('facebook','https://www.facebook.com/johnjay.manalastas'),
           ('linkedin', 'https://www.linkedin.com/in/jaymanalastas/'),)
 
-BIO = "Analyst looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives."
+BIO = "test Analyst looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives."
 
 PROFILE_IMAGE = "PROFILE.jpg"
 
