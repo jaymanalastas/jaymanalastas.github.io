@@ -1,5 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>All Things Data - trial</title><link href="/" rel="alternate"></link><link href="/feeds/trial.atom.xml" rel="self"></link><id>/</id><updated>2019-10-03T20:00:00-04:00</updated><entry><title>First Post</title><link href="/2019/1/first-post.html" rel="alternate"></link><published>2019-10-03T20:00:00-04:00</published><updated>2019-10-03T20:00:00-04:00</updated><author><name>Vik Paruchuri</name></author><id>tag:None,2019-10-03:/2019/1/first-post.html</id><summary type="html">&lt;p&gt;My first post, read it to find out.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>All Things Data - Deep Dive into Seaborn library</title>
+        <meta charset="utf-8" />
+
+
+
+
+    <meta name="tags" content="python cloud" />
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">All Things Data <strong></strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li class="active"><a href="/category/data-science.html">Data Science</a></li>
+            <li><a href="/category/data-science-data-wrangling.html">Data Science data wrangling</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="/2019/1/Deep_dive.html" rel="bookmark"
+         title="Permalink to Deep Dive into Seaborn library">Deep Dive into Seaborn library</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2019-10-07T20:00:00-04:00">
+      Mon 07 October 2019
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="/author/john-manalastas.html">John Manalastas</a>
+    </address>
+    <div class="category">
+        Category: <a href="/category/data-science.html">Data Science</a>
+    </div>
+    <div class="tags">
+        Tags:
+            <a href="/tag/python-cloud.html">python cloud</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -361,7 +404,7 @@ div.unrecognized_cell .inner_cell a:hover {
   text-decoration: none;
 }
 @media (max-width: 540px) {
-  div.unrecognized_cell &gt; div.prompt {
+  div.unrecognized_cell > div.prompt {
     display: none;
   }
 }
@@ -414,19 +457,19 @@ div.input_prompt {
   color: #303F9F;
   border-top: 1px solid transparent;
 }
-div.input_area &gt; div.highlight {
+div.input_area > div.highlight {
   margin: 0.4em;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-div.input_area &gt; div.highlight &gt; pre {
+div.input_area > div.highlight > pre {
   margin: 0px;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-/* The following gets added to the &lt;head&gt; if it is detected that the user has a
+/* The following gets added to the <head> if it is detected that the user has a
  * monospace font with inconsistent normal/bold/italic height.  See
  * notebookmain.js.  Such fonts will have keywords vertically offset with
  * respect to the rest of the text.  The user should select a better font.
@@ -487,7 +530,7 @@ div.input_area &gt; div.highlight &gt; pre {
 }
 /*
 
-Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 Adapted from GitHub theme
 
 */
@@ -731,7 +774,7 @@ div.output_area img.unconfined,
 div.output_area svg.unconfined {
   max-width: none;
 }
-div.output_area .mglyph &gt; img {
+div.output_area .mglyph > img {
   max-width: none;
 }
 /* This is needed to protect the pre formating from global settings such
@@ -969,7 +1012,7 @@ div.text_cell {
   align-items: stretch;
 }
 @media (max-width: 540px) {
-  div.text_cell &gt; div.prompt {
+  div.text_cell > div.prompt {
     display: none;
   }
 }
@@ -1041,8 +1084,8 @@ h6:hover .anchor-link {
   font-size: 100%;
   font-style: italic;
 }
-&lt;/style&gt;
-&lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
+</style>
+<style type="text/css">.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -1110,8 +1153,8 @@ h6:hover .anchor-link {
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
-&lt;style type="text/css"&gt;
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -1147,121 +1190,114 @@ h6:hover .anchor-link {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
-&lt;/style&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="First-post!"&gt;First post!&lt;a class="anchor-link" href="#First-post!"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This will be the first post in our new Pelican blog! You can add any code or markdown cells to this Jupyter notebook, and they will be rendered on your blog.&lt;/p&gt;
+</style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Deep-Dive-into-Seaborn">Deep Dive into Seaborn<a class="anchor-link" href="#Deep-Dive-into-Seaborn">&#182;</a></h2><h4 id="Overview:">Overview:<a class="anchor-link" href="#Overview:">&#182;</a></h4><ul>
+<li>Seaborn is a popular data visualization library for Python</li>
+<li>It is a combination of aesthetic appeal, technical insights and ease of use. </li>
+<li>Sample sns plots, graphs and customization tools available through seaborn</li>
+</ul>
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Seaborn is built based on $matplotlib$ library. It is used to create well-designed visualizatoin with nice aesthetic quality and provides meaningful insights. As a Seaborn user, you are able to customize the color so it stands out, define boundaries to see data more clearly and add different parameters to gain more insight with a messy data.</p>
+<p>As a data scientist, our job is to provide explanations to our stakeholders/clients. More often than not, these people rely on us and our data to make snap decisions. Having visual representation of our findings and insight coupled with our presentation will go a long way in our careers.</p>
+<p>Although there are other Python libraries for visualization, Seaborn is a clear favorite of mine due to ease of use and technical insight it provides.</p>
 
-&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;randint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="fig">fig<a class="anchor-link" href="#fig">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h2><ul>
+<li>Setting up the Environment</li>
+<li>Data Visualizatoin using Seaborn<ul>
+<li>Satistical Relationships</li>
+<li>Plotting Categorical Data</li>
+<li>Visualizaing the Distribution of a Dataset</li>
+</ul>
+</li>
+</ul>
 
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.)-Setting-up-the-Environment">1.) Setting up the Environment<a class="anchor-link" href="#1.)-Setting-up-the-Environment">&#182;</a></h3><p>The seaborn library has four mandatory dependencies it needs for it to run:</p>
+<ul>
+<li>Numpy</li>
+<li>Scipy </li>
+<li>matplotlib</li>
+<li>Pandas</li>
+</ul>
+<p>In order to use Seaborn we need to install all the depedencies mentioned above. Once that is done, we are ready to use the Seaborn library.</p>
+<p>Importing dependenices and seaborn itself in your Juptyer Notebooke. Please look below for the codes:</p>
 
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
+</pre></div>
 
+    </div>
+</div>
+</div>
 
-&lt;div class="output_area"&gt;
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We're all set to explore seaborn!</p>
+<h3 id="2.)-Dataset-Used-for-Data-Visualization">2.) Dataset Used for Data Visualization<a class="anchor-link" href="#2.)-Dataset-Used-for-Data-Visualization">&#182;</a></h3><p>We will work with a data set from kaggle. This is the api command to download the dataset from kaggle.</p>
+<p>pip install kaggle and run the below command to a file location you want the data to be house at.</p>
+<p>$kaggle datasets download -d jsphyg/tipping$</p>
+<p>I've picked this dataset because they contain a good set of features in both categorical and numerical instance. This dataset is comes from kaggle and is real, this is important because it'll give us an idea of how data visualization and exploration work is done.</p>
 
-    &lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 
+    </div>
+</div>
+</div>
 
-
-
-&lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;64&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
-
-&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
-
-&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;
-
-    &lt;div class="prompt output_prompt"&gt;Out[3]:&lt;/div&gt;
-
-
-
-
-&lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;(array([2., 1., 1., 0., 2., 0., 1., 0., 0., 2.]),
- array([ 1. ,  1.9,  2.8,  3.7,  4.6,  5.5,  6.4,  7.3,  8.2,  9.1, 10. ]),
- &amp;lt;a list of 10 Patch objects&amp;gt;)&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class="output_area"&gt;
-
-    &lt;div class="prompt"&gt;&lt;/div&gt;
-
-
-
-
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,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
-"
-&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
+</div>
  
 
 
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
@@ -1288,5 +1324,15 @@ h6:hover .anchor-link {
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;
-</content><category term="python firsts"></category></entry></feed>
+</script>
+
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
