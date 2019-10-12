@@ -33,13 +33,14 @@ SOCIAL = (('github', 'https://github.com/jaymanalastas'),
 
 BIO = "Analyst looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives."
 
+PROFILE_IMAGE = "2019/img/PROFILE.jpg"
 GITHUB_URL = ('https://github,com/jaymanalastas')
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-STATIC_PATH = ['2019/img']
+# STATIC_PATH = ['2019/img']
 
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 MARKUP = ('md', 'ipynb')
 
