@@ -1220,7 +1220,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Interactive-Map">Interactive Map<a class="anchor-link" href="#Interactive-Map">&#182;</a></h2><p>The ability to interact with data is important, even more is when the data gathered are deeply correlated with the success of a company. This is true in all aspect of business.</p>
+<h2 id="Interactive-Map">Interactive Map<a class="anchor-link" href="#Interactive-Map">&#182;</a></h2><p>The ability to interact with data is important. This is true in all aspect of business.</p>
 <p>The simple act of gathering is the first step to utilize the data. We must also organize the data to make interpertable which gives stake holders the ability to analyze and create actionable strategies the provide meaningful value.</p>
 <p>This post will touch on every aspect mentioned above.</p>
 
@@ -1339,7 +1339,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We'll set up $pandas_DataReader$ and gather data from:</p>
+<p>We'll set up $pandas_DataReader$ and gather data from the following bank stocks with a time frame between 2006 to 2016:</p>
 <ul>
 <li>Bank of America 'BAC'</li>
 <li>CitiGroup 'C'</li>
@@ -1355,7 +1355,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">BAC</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">DataReader</span><span class="p">(</span><span class="s1">&#39;BAC&#39;</span><span class="p">,</span> <span class="s1">&#39;yahoo&#39;</span><span class="p">,</span><span class="s1">&#39;JAN-01-2006&#39;</span><span class="p">,</span><span class="s1">&#39;JAN-01-2016&#39;</span> <span class="p">)</span>
@@ -1378,7 +1378,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bank_stocks</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Bank Ticker&#39;</span><span class="p">,</span> <span class="s1">&#39;Stock Info&#39;</span><span class="p">]</span>
@@ -1395,7 +1395,7 @@ h6:hover .anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -1627,7 +1627,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bank_stocks</span><span class="o">.</span><span class="n">xs</span><span class="p">(</span><span class="s1">&#39;Close&#39;</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">level</span> <span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
@@ -1643,7 +1643,7 @@ h6:hover .anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -1667,7 +1667,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bank_stocks</span><span class="o">.</span><span class="n">xs</span><span class="p">(</span><span class="s1">&#39;Close&#39;</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">level</span> <span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
@@ -1683,7 +1683,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -1705,6 +1705,19 @@ dtype: float64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1716,7 +1729,7 @@ $$r_t = \frac{p_t - p_{t-1}}{p_{t-1}} = \frac{p_t}{p_{t-1}} - 1$$<p>We will do t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -1736,7 +1749,7 @@ $$r_t = \frac{p_t - p_{t-1}}{p_{t-1}} = \frac{p_t}{p_{t-1}} - 1$$<p>We will do t
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -1835,7 +1848,7 @@ $$r_t = \frac{p_t - p_{t-1}}{p_{t-1}} = \frac{p_t}{p_{t-1}} - 1$$<p>We will do t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">returns</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
@@ -1851,13 +1864,13 @@ $$r_t = \frac{p_t - p_{t-1}}{p_{t-1}} = \frac{p_t}{p_{t-1}} - 1$$<p>We will do t
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;seaborn.axisgrid.PairGrid at 0x7f8993e82b00&gt;</pre>
+<pre>&lt;seaborn.axisgrid.PairGrid at 0x7f0d719b8c50&gt;</pre>
 </div>
 
 </div>
@@ -1884,10 +1897,100 @@ $$r_t = \frac{p_t - p_{t-1}}{p_{t-1}} = \frac{p_t}{p_{t-1}} - 1$$<p>We will do t
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Creidts:</p>
+<p>From here, we're able analyze the data base on bip change rather than vlaue change. The following will show dates of biggest drops and gains respectivly.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="o">.</span><span class="n">idxmin</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>BAC Return   2009-01-20
+C Return     2009-02-27
+GS Return    2009-01-20
+JPM Return   2009-01-20
+MS Return    2008-10-09
+WFC Return   2009-01-20
+dtype: datetime64[ns]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>BAC Return   2009-04-09
+C Return     2008-11-24
+GS Return    2008-11-24
+JPM Return   2009-01-21
+MS Return    2008-10-13
+WFC Return   2008-07-16
+dtype: datetime64[ns]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Analysis of the biggest drop in respect to time of bank stocks:</p>
 <ul>
-<li><a href="https://riptutorial.com/pandas/topic/1912/pandas-datareader">https://riptutorial.com/pandas/topic/1912/pandas-datareader</a></li>
-<li><a href="https://finance.yahoo.com/">https://finance.yahoo.com/</a></li>
+<li><p>BAC, GS, JPM and WFC all had their biggest drop on the same day.  The day is Obama's inauguration as the 44th President of the United States of America and became the United States' first African-American president. (2009-01-20)</p>
+</li>
+<li><p>C had their biggest drop on Feb 27th 2009. It eclipse (2009-01-20) drop. The New York Time repported that Treasury Department is taking between 30 to 40 percent of C as part of the third bailout of banks during the recession. (2009-02-27)</p>
+</li>
+<li><p>MS had their biggest hit on Oct. 9th 2018. This is due to a combination of things. First, the ban on short selling of bank stock was lifted. Second, there was a deal that had MS at the edge of bankruptcy if the deal  didn't go through. (2008-10-09)</p>
+</li>
 </ul>
 
 </div>
@@ -1895,7 +1998,34 @@ $$r_t = \frac{p_t - p_{t-1}}{p_{t-1}} = \frac{p_t}{p_{t-1}} - 1$$<p>We will do t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Creidts:</p>
+<ul>
+<li><a href="https://riptutorial.com/pandas/topic/1912/pandas-datareader">https://riptutorial.com/pandas/topic/1912/pandas-datareader</a></li>
+<li><a href="https://finance.yahoo.com/">https://finance.yahoo.com/</a></li>
+<li><a href="https://www.onthisday.com/date/2009/january/20">https://www.onthisday.com/date/2009/january/20</a></li>
+<li><a href="https://www.nytimes.com/2009/02/27/business/27deal.html">https://www.nytimes.com/2009/02/27/business/27deal.html</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span> 
