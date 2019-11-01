@@ -1791,7 +1791,7 @@ h6:hover .anchor-link {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f9733bd19e8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f6cb4830c50&gt;</pre>
 </div>
 
 </div>
@@ -1891,7 +1891,7 @@ Name: length, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">messages</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;length&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
@@ -1907,14 +1907,14 @@ Name: length, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f97336c9470&gt;,
-       &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f97335e56d8&gt;],
+<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f6cb469ef28&gt;,
+       &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f6cb46099e8&gt;],
       dtype=object)</pre>
 </div>
 
@@ -1942,14 +1942,14 @@ Name: length, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Cleaning-Our-Data">Cleaning Our Data<a class="anchor-link" href="#Cleaning-Our-Data">&#182;</a></h3><p>We'll tokenize our data by removing punctuations and filler words within the dataset.</p>
+<h3 id="Cleaning-Our-Data">Cleaning Our Data<a class="anchor-link" href="#Cleaning-Our-Data">&#182;</a></h3><p>We'll tokenize our aka (normalize data) by removing punctuations and filler words within the dataset.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">string</span> 
@@ -1963,7 +1963,7 @@ Name: length, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">text_process</span><span class="p">(</span><span class="n">mess</span><span class="p">):</span>
@@ -1978,6 +1978,128 @@ Name: length, dtype: float64</pre>
     <span class="k">return</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">nonpunc</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)]</span>
     
     
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">messages</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">text_process</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    [Go, jurong, point, crazy, Available, bugis, n...
+1                       [Ok, lar, Joking, wif, u, oni]
+2    [Free, entry, 2, wkly, comp, win, FA, Cup, fin...
+3        [U, dun, say, early, hor, U, c, already, say]
+4    [Nah, dont, think, goes, usf, lives, around, t...
+Name: message, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vectorization-of-Words">Vectorization of Words<a class="anchor-link" href="#Vectorization-of-Words">&#182;</a></h2><p>There are three steps to this process:</p>
+<ul>
+<li><ol>
+<li>Count how many times does a word occur in each message.</li>
+</ol>
+</li>
+<li><ol>
+<li>Weigh the coutns, so that frequent toekns get lower weights (inverse document frequency) </li>
+</ol>
+</li>
+<li><ol>
+<li>Normalize the fectors to unit length, to abstract from the original text length</li>
+</ol>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="k">import</span> <span class="n">CountVectorizer</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ImportError</span>                               Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-19-2c11b968a5ad&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> sklearn<span class="ansi-blue-fg">.</span>feature_extraction <span class="ansi-green-fg">import</span> CountVectorizer
+
+<span class="ansi-red-fg">ImportError</span>: cannot import name &#39;CountVectorizer&#39; from &#39;sklearn.feature_extraction&#39; (/home/jaymanalastas_1/anaconda3/lib/python3.7/site-packages/sklearn/feature_extraction/__init__.py)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
@@ -2016,6 +2138,7 @@ Name: length, dtype: float64</pre>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Credits">Credits<a class="anchor-link" href="#Credits">&#182;</a></h3><ul>
 <li><a href="https://www.ionos.com/digitalguide/online-marketing/online-sales/how-does-natural-language-processing-work/">https://www.ionos.com/digitalguide/online-marketing/online-sales/how-does-natural-language-processing-work/</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sparse_matrix">https://en.wikipedia.org/wiki/Sparse_matrix</a></li>
 </ul>
 
 </div>
