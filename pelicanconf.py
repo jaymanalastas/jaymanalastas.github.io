@@ -38,7 +38,7 @@ GITHUB_URL = ('https://github,com/jaymanalastas')
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# STATIC_PATH = ['2019/img']
+STATIC_PATHS = ['2019/img']
 
 RELATIVE_URLS = False
 
