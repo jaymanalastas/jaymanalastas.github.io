@@ -31,13 +31,27 @@ SOCIAL = (('github', 'https://github.com/jaymanalastas'),
 	  ('facebook','https://www.facebook.com/johnjay.manalastas'),
           ('linkedin', 'https://www.linkedin.com/in/jaymanalastas/'),)
 
-BIO = "Analyst looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives."
+
+AUTHORS_BIO = {
+  "John Manalastas": {
+    "name": "John Manalastas",
+    "cover": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
+    "image": "https://arulrajnet.github.io/attila-demo/assets/images/avatar.png",
+    "LinkedIn": "https://www.linkedin.com/in/jaymanalastas/",
+    "location": "Orlando, FL",
+    "bio": "Analyst looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives."
+  }
+}
+
 
 PROFILE_IMAGE = "img/PROFILE.jpg"
 GITHUB_URL = ('https://github.com/jaymanalastas')
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
+
+COLOR_SCHEME_CSS = 'monokai.css'
+
 STATIC_PATHS = ['2019']
 
 RELATIVE_URLS = False
