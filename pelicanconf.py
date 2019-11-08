@@ -47,4 +47,4 @@ MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
 
-THEME = "themes/pelican-hyde"
+THEME = "themes/attila"
