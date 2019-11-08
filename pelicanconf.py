@@ -111,7 +111,7 @@ THEME = "themes/attila"
 
 ####
 # To set background image for the home page.
-HOME_COVER = 'https://unsplash.com/photos/TO2l2mxk5w0'
+HOME_COVER = 'https://images.freeimages.com/images/large-previews/3ad/hi-tech-http-1555072.jpg'
 #'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
 
 
