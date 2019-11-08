@@ -20,8 +20,12 @@
   <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
 
   <!-- Code highlight color scheme -->
-      <link href="/theme/css/code_blocks/monokai.css" rel="stylesheet">
+      <link href="/theme/css/code_blocks/github.css" rel="stylesheet">
 
+    <!-- CSS specified by the user -->
+
+
+    <link href="/assets/css/myblog.css" type="text/css" rel="stylesheet" />
 
   <!-- Custom fonts -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
@@ -41,7 +45,7 @@
 <meta property="og:site_name" content="All Things Data"/>
 <meta property="og:type" content="blog"/>
 <meta property="og:title" content="All Things Data"/>
-<meta property="og:description" content="View the blog."/>
+<meta property="og:description" content="Blogging my way to data science"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="/theme/images/home-bg.jpg">
@@ -55,7 +59,7 @@
   "name": " All Things Data ",
   "url" : "/",
   "image": "/theme/images/home-bg.jpg",
-  "description": "View the blog."
+  "description": "Blogging my way to data science"
 }
 </script>
 </head>
@@ -74,7 +78,7 @@
 </nav>
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" >
+    <header id="blog-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
           <span id="menu-button" class="nav-button">
@@ -82,7 +86,9 @@
           </span>
         </nav>
         <h1 class="blog-name"><a href="/">All Things Data</a></h1>
+        <span class="blog-description">Blogging my way to data science</span>
 
+          <div class="blog-cover cover" style="background-image: url('https://unsplash.com/photos/TO2l2mxk5w0')">
       </div>
     </header>
 
@@ -96,7 +102,7 @@
 <nav class="pagination" role="pagination">
   <div class="inner">
     <span class="pagination-info">Page 1 / 2</span>
-    <a class="pagination-prev" href="/index2.html"><span class="pagination-label">Older Posts</span> <i class="ic ic-arrow-right"></i></a>
+    <a class="pagination-prev" href="/page/2/"><span class="pagination-label">Older Posts</span> <i class="ic ic-arrow-right"></i></a>
     <div class="clear"></div>
   </div>
 </nav>
@@ -105,11 +111,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/natural-language-processing.html" rel="bookmark" title="Permalink to Natural Language Processing">Natural Language Processing</a>
+                <h2 class="post-title"><a href="/2019/10/natural-language-processing.html" rel="bookmark" title="Permalink to Natural Language Processing">Natural Language Processing</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Thu 31 October 2019">Thu 31 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="31 Oct 2019">31 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -123,11 +129,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/recommendation-system.html" rel="bookmark" title="Permalink to Recommendation System">Recommendation System</a>
+                <h2 class="post-title"><a href="/2019/10/recommendation-system.html" rel="bookmark" title="Permalink to Recommendation System">Recommendation System</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Wed 30 October 2019">Wed 30 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="30 Oct 2019">30 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -141,11 +147,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/tds-api.html" rel="bookmark" title="Permalink to TD's API">TD's API</a>
+                <h2 class="post-title"><a href="/2019/10/tds-api.html" rel="bookmark" title="Permalink to TD's API">TD's API</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Sun 27 October 2019">Sun 27 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="27 Oct 2019">27 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -159,11 +165,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/principal-component-analysis.html" rel="bookmark" title="Permalink to Principal Component Analysis">Principal Component Analysis</a>
+                <h2 class="post-title"><a href="/2019/10/principal-component-analysis.html" rel="bookmark" title="Permalink to Principal Component Analysis">Principal Component Analysis</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Sat 26 October 2019">Sat 26 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="26 Oct 2019">26 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -177,11 +183,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/support-vector-machine-svm.html" rel="bookmark" title="Permalink to Support Vector Machine (SVM)">Support Vector Machine (SVM)</a>
+                <h2 class="post-title"><a href="/2019/10/support-vector-machine-svm.html" rel="bookmark" title="Permalink to Support Vector Machine (SVM)">Support Vector Machine (SVM)</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Thu 24 October 2019">Thu 24 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="24 Oct 2019">24 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -195,11 +201,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/tableau.html" rel="bookmark" title="Permalink to Tableau">Tableau</a>
+                <h2 class="post-title"><a href="/2019/10/tableau.html" rel="bookmark" title="Permalink to Tableau">Tableau</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Wed 23 October 2019">Wed 23 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="23 Oct 2019">23 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -213,11 +219,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/decision-tree.html" rel="bookmark" title="Permalink to Decision Tree">Decision Tree</a>
+                <h2 class="post-title"><a href="/2019/10/decision-tree.html" rel="bookmark" title="Permalink to Decision Tree">Decision Tree</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Tue 22 October 2019">Tue 22 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="22 Oct 2019">22 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -231,11 +237,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/knn-theory.html" rel="bookmark" title="Permalink to KNN Theory">KNN Theory</a>
+                <h2 class="post-title"><a href="/2019/10/knn-theory.html" rel="bookmark" title="Permalink to KNN Theory">KNN Theory</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Mon 21 October 2019">Mon 21 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="21 Oct 2019">21 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -249,11 +255,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/logistic-regression-on-titanic-dataset.html" rel="bookmark" title="Permalink to Logistic Regression on Titanic Dataset">Logistic Regression on Titanic Dataset</a>
+                <h2 class="post-title"><a href="/2019/10/logistic-regression-on-titanic-dataset.html" rel="bookmark" title="Permalink to Logistic Regression on Titanic Dataset">Logistic Regression on Titanic Dataset</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Sun 20 October 2019">Sun 20 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="20 Oct 2019">20 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -267,11 +273,11 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
-                <h2 class="post-title"><a href="/machine-learning-at-its-basic-form.html" rel="bookmark" title="Permalink to Machine Learning at it's Basic Form">Machine Learning at it's Basic Form</a>
+                <h2 class="post-title"><a href="/2019/10/machine-learning-at-its-basic-form.html" rel="bookmark" title="Permalink to Machine Learning at it's Basic Form">Machine Learning at it's Basic Form</a>
                 </h2>
                 <span class="post-meta">
-                        <a href="/author/john-manalastas.html">John Manalastas</a>
-                     | <time datetime="Thu 17 October 2019">Thu 17 October 2019</time>
+                        <a href="/author/john-manalastas">John Manalastas</a>
+                     | <time datetime="17 Oct 2019">17 Oct 2019</time>
                 </span>
                 <div class="clear"></div>
             </header>
@@ -286,7 +292,7 @@
 <nav class="pagination" role="pagination">
   <div class="inner">
     <span class="pagination-info">Page 1 / 2</span>
-    <a class="pagination-prev" href="/index2.html"><span class="pagination-label">Older Posts</span> <i class="ic ic-arrow-right"></i></a>
+    <a class="pagination-prev" href="/page/2/"><span class="pagination-label">Older Posts</span> <i class="ic ic-arrow-right"></i></a>
     <div class="clear"></div>
   </div>
 </nav>
