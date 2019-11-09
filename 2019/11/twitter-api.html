@@ -1315,7 +1315,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -1331,7 +1331,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">auth</span> <span class="o">=</span> <span class="n">tw</span><span class="o">.</span><span class="n">OAuthHandler</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">consumer_key</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">consumer_secret</span><span class="p">)</span>
@@ -1348,7 +1348,7 @@ h6:hover .anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Sending a twit:</p>
-<p>To see the example please following the link and look at the first post:</p>
+<p>To see the example please follow the link and look at the first post:</p>
 <p><a href="https://twitter.com/jaymanalastas">https://twitter.com/jaymanalastas</a></p>
 <p>After we run the command below, we'll commet it out so that it doesn't post multiple copies of it self.</p>
 
@@ -1357,7 +1357,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># api.update_status(&quot;Check it out! I&#39;m tweeting from my #jupyter_notebok using #python! Go to my website to find out how: https://jaymanalastas.github.io/2019/11/twitter-api.html&quot;)</span>
@@ -1367,6 +1367,133 @@ h6:hover .anchor-link {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Search-twitters-for-tweets">Search twitters for tweets<a class="anchor-link" href="#Search-twitters-for-tweets">&#182;</a></h2><p>Next we'll collect data on tesla. First we need to create query parameters:</p>
+<ul>
+<li><ol>
+<li>Search term - in our case it'll be #tesla</li>
+</ol>
+</li>
+<li><ol>
+<li>Start date of our search</li>
+</ol>
+</li>
+</ul>
+<p><strong>Please note</strong> that Twitter's API only allows access to past few weeks of tweets, so we can't dig too much into the data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">search_words</span> <span class="o">=</span> <span class="s1">&#39;#tesla&#39;</span>
+<span class="n">new_search</span> <span class="o">=</span> <span class="n">search_words</span> <span class="o">+</span> <span class="s2">&quot;-filter:retweets&quot;</span> <span class="c1"># this filters all retweets from our search</span>
+<span class="n">date_since</span> <span class="o">=</span> <span class="s1">&#39;2019-10-01&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Blow we created a script to query data from our parameter.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweets</span> <span class="o">=</span> <span class="n">tw</span><span class="o">.</span><span class="n">Cursor</span><span class="p">(</span><span class="n">api</span><span class="o">.</span><span class="n">search</span><span class="p">,</span>
+                  <span class="n">q</span><span class="o">=</span><span class="n">new_search</span><span class="p">,</span>
+                  <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span>
+                  <span class="n">since</span><span class="o">=</span><span class="n">date_since</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="p">[</span><span class="n">tweet</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;OUR TOKEN IS A TOOL TO HELP RESET THIS PLANET AND TO HELP FREE HUMANITY FROM THE NEGATIVE, PARASITIC ENERGIES THAT… https://t.co/bTp0M1bdO4&#39;,
+ &#39;Happy Saturday! \n\nIt’s a beautiful day ☀️\n\n#Tesla #California https://t.co/H7KZfRFG51&#39;,
+ &#39;@Sofiaan What’s benefit for consumers here? Old school trying to safe bottom line while #tesla is on a mission to c… https://t.co/eSxTgUEPHo&#39;,
+ &#39;#Lifestyle #MemberNewsletter #OpEd #Tesla How much is EV manufacturer branding going to matter in the long term?… https://t.co/va0XWPyztT&#39;,
+ &#34;#Zelenskiy, who can&#39;t meet a journalist one on one for an interview and prefers to give interviews to a #Tesla car,… https://t.co/gXUWWPatLo&#34;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">tweets</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Credits:">Credits:<a class="anchor-link" href="#Credits:">&#182;</a></h3><ul>
+<li><a href="https://developer.twitter.com">https://developer.twitter.com</a></li>
+</ul>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
