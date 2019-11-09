@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'John Manalastas'
-SITENAME = u"All Things Data"
-SITESUBTITLE = u'Blogging my way to data science'
+SITENAME = u"Data Like You Mean It"
+SITESUBTITLE = u'Blogging my way into data science'
 SITEURL = ''
 
 PATH = 'content'
@@ -45,7 +45,7 @@ GITHUB_URL = ('https://github.com/jaymanalastas')
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#HOME_COLOR = 'black'
+HOME_COLOR = 'black'
 #COLOR_SCHEME_CSS = 'darkly.css'
 STATIC_PATHS = ['assets']
 
@@ -64,6 +64,11 @@ PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
 YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
+
+
+
+##ignore file 
+IGNORE_FILES = ['.ipynb_checkpoints']
 
 
 ## Tags and Category path:
@@ -88,7 +93,7 @@ MARKUP = ('md', 'ipynb')
 
 #### Plugins
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['sitemap', 'neighbors','ipynb.markup','assets']
+PLUGINS = ['sitemap', 'neighbors','ipynb.markup','assets','static_comments']
 #'ipynb.markup', 'assets', 
 ### Stiemap
 
@@ -111,21 +116,21 @@ THEME = "themes/attila"
 
 ####
 # To set background image for the home page.
-HOME_COVER = 'https://images.freeimages.com/images/large-previews/3ad/hi-tech-http-1555072.jpg'
+HOME_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
 #'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
 
 
 # Custom Header
 
-HEADER_COVERS_BY_TAG = {'python-cloud':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
+HEADER_COVERS_BY_TAG = {'python':'https://casper.ghost.org/v1.0.0/images/writing.jpg','data':'https://www.freeimages.com/photo/dhow-1517243'}
 
 AUTHORS_BIO = {
   "john manalastas": {
     "name": "John Manalastas",
-    "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
-    "image": "assets/images/avatar.png",
-    "linkedin": "https://www.linkedin.com/in/jaymanalastas/",
-    "github": "https://github.com/jaymanalastas",
+   # "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+    "image": "https://casper.ghost.org/v1.0.0/images/writing.jpg",
+    "linkedin": "jaymanalastas/",
+    "github": "jaymanalastas",
     "location": "Orlando, FL",
     "bio": "Finance leader looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives."
 

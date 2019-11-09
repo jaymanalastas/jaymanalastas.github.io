@@ -1,7 +1,0 @@
-Title:TD's API
-Slug:
-Date: 2019-10-27 20:00
-Category: Data Science
-Tags: python cloud 
-author: John Manalastas
-Summary: TD Ameritrade account holders have access to the TD Ameritrade API for free. With this guide, we'll set up codes to request data from the site and convert it to df using pandas.

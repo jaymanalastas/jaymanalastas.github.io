@@ -155,3 +155,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+#config file
+
+config.py
+__pycache__
+.ipynb_checkpoints
+
+
