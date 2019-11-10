@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2019-11-10T18:32:53-00:00</lastmod>
+<lastmod>2019-11-10T18:41:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2019-11-10T18:32:53-00:00</lastmod>
+<lastmod>2019-11-10T18:41:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2019-11-10T18:32:53-00:00</lastmod>
+<lastmod>2019-11-10T18:41:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -39,7 +39,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/2019/10/natural-language-processing.html</loc>
+<loc>/2019/10/nlp.html</loc>
 <lastmod>2019-10-31T20:00:00-04:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -194,6 +194,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/tag/machine-learning</loc>
+<lastmod>2019-10-31T20:00:00-04:56</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/nlp</loc>
 <lastmod>2019-10-31T20:00:00-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
