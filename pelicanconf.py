@@ -46,7 +46,7 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 HOME_COLOR = 'black'
-#COLOR_SCHEME_CSS = 'darkly.css'
+COLOR_SCHEME_CSS = 'tomorrow.css'
 STATIC_PATHS = ['assets']
 
 EXTRA_PATH_METADATA = {
@@ -127,10 +127,11 @@ HEADER_COVERS_BY_TAG = {'python':'https://casper.ghost.org/v1.0.0/images/writing
 AUTHORS_BIO = {
   "john manalastas": {
     "name": "John Manalastas",
-   # "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
-    "image": "https://casper.ghost.org/v1.0.0/images/writing.jpg",
+    "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+    "image": "https://media.licdn.com/dms/image/C4D03AQGxV_2OCcJ6_w/profile-displayphoto-shrink_200_200/0?e=1578528000&v=beta&t=Wi1lzQ9mRpsXmmOZSiVUQIcfoaH38x_YDZ2yCavJKqQ",
     "linkedin": "jaymanalastas/",
     "github": "jaymanalastas",
+    "twitter": "https://twitter.com/jaymanalastas",
     "location": "Orlando, FL",
     "bio": "Finance leader looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives."
 
