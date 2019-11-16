@@ -1290,12 +1290,81 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 </style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Market sentiment analysis is used to identify attiudes in text data about the subject of interest.</p>
+<p>It is scored between 1 to -1; values closer to 1 is positive, 0 for neatural, and -1 for negative sentiment.</p>
+<p>We'll use the <strong>textblob</strong> pacakge to calc. the polarity value of each tweet on our subject and plot it to a histogram to identify the overall sentiment towards the subject of interest.</p>
+<p>Import the following packages:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">itertools</span>
+<span class="kn">import</span> <span class="nn">collections</span>
+
+<span class="kn">import</span> <span class="nn">tweepy</span> <span class="k">as</span> <span class="nn">tw</span> 
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">stopwords</span>
+<span class="kn">import</span> <span class="nn">re</span> 
+<span class="kn">import</span> <span class="nn">networkx</span>
+<span class="kn">from</span> <span class="nn">textblob</span> <span class="k">import</span> <span class="n">TextBlob</span>
+
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">font_scale</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;whitegrid&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-aac9952b6ffd&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span> <span class="ansi-green-fg">import</span> re
+<span class="ansi-green-intense-fg ansi-bold">     12</span> <span class="ansi-green-fg">import</span> networkx
+<span class="ansi-green-fg">---&gt; 13</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> textblob <span class="ansi-green-fg">import</span> TextBlob
+<span class="ansi-green-intense-fg ansi-bold">     14</span> 
+<span class="ansi-green-intense-fg ansi-bold">     15</span> <span class="ansi-green-fg">import</span> warnings
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;textblob&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Test</span> <span class="o">--</span> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
