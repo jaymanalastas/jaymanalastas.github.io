@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+      <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>Twitter API Part I</title>
+  <title>Definition</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-<link href="/2019/11/twit1.html" rel="canonical" />
+<link href="/pages/definition/" rel="canonical" />
+
   <!-- Feed -->
 
   <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
@@ -40,54 +41,26 @@
 
 
 
-    <meta name="description" content="Using Twitter's api to extract useful data">
-
-    <meta name="author" content="John Manalastas">
-
-    <meta name="tags" content="data">
-    <meta name="tags" content="python">
-    <meta name="tags" content="api">
-    <meta name="tags" content="twitter">
-
-
-
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="Data Like You Mean It"/>
-<meta property="og:title" content="Twitter API Part I"/>
-<meta property="og:description" content="Using Twitter's api to extract useful data"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Data Like You Mean It"/>
+<meta property="og:description" content="Blogging my way into data science"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="/2019/11/twit1.html"/>
-<meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2019-11-06 20:00:00-05:00"/>
-<meta property="article:modified_time" content=""/>
-<meta property="article:author" content="/author/john-manalastas">
-  <meta property="article:publisher" content="https://www.facebook.com/johnjay.manalastas" />
-<meta property="article:section" content="data"/>
-<meta property="article:tag" content="data"/>
-<meta property="article:tag" content="python"/>
-<meta property="article:tag" content="api"/>
-<meta property="article:tag" content="twitter"/>
-<meta property="og:image" content="https://images.unsplash.com/photo-1515555230216-82228b88ea98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">
+<meta property="og:url" content="/"/>
+<meta property="og:image" content="/theme/images/home-bg.jpg">
 
 <!-- Twitter Card -->
 
 <script type="application/ld+json">
 {
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "name": "Twitter API Part I",
-  "headline": "Twitter API Part I",
-  "datePublished": "2019-11-06 20:00:00-05:00",
-  "dateModified": "",
-  "author": {
-    "@type": "Person",
-    "name": "John Manalastas",
-    "url": "/author/john-manalastas"
-  },
-  "image": "https://images.unsplash.com/photo-1515555230216-82228b88ea98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
-  "url": "/2019/11/twit1.html",
-  "description": "Using Twitter's api to extract useful data"
+  "@context" : "http://schema.org",
+  "@type" : "Website",
+  "name": " Data Like You Mean It ",
+  "url" : "/",
+  "image": "/theme/images/home-bg.jpg",
+  "description": "Blogging my way into data science"
 }
 </script>
 </head>
@@ -101,16 +74,11 @@
     <ul>
 
               <li role="presentation"><a href="/pages/about-me/">About me</a></li>
-              <li role="presentation"><a href="/pages/definition/">Definition</a></li>
+              <li class="nav-definition active" role="presentation"><a href="/pages/definition/">Definition</a></li>
 
     </ul>
   </div>
 </nav>
-    <!-- Progressbar -->
-    <div class="progress-container">
-        <span class="progress-bar"></span>
-    </div>
-
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header id="post-header" class="has-cover">
@@ -123,26 +91,19 @@
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">Twitter API Part I</h1>
-        <!-- TODO : Proper class for headline -->
-        <span class="post-meta">
-                <a href="/author/john-manalastas">John Manalastas</a>
-            | <time datetime="06 Nov 2019">06 Nov 2019</time>
-        </span>
-        <!-- TODO : Modified check -->
-            <div class="post-cover cover" style="background-image: url('https://images.unsplash.com/photo-1515555230216-82228b88ea98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80')">
+        <h1 class="post-title">Definition</h1>
+            <div class="post-cover cover" style="background-image: url('https://images.unsplash.com/photo-1532032582455-65bf86c5a76f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80')">
       </div>
     </header>
 
   <section id="wrapper">
     <a class="hidden-close"></a>
-
-    <!-- Post content -->
-    <main class="content" role="main">
-        <article class="post">
-        <div class="inner">
-            <section class="post-content">
-                <style type="text/css">/*!
+  <!-- Post content -->
+  <main class="content" role="main">
+      <article class="post">
+      <div class="inner">
+          <section class="post-content">
+              <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1290,564 +1251,11 @@ h6:hover .anchor-link {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
-</style>
+</style><body>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Access-Twitter-API-in-Python">Access Twitter API in Python<a class="anchor-link" href="#Access-Twitter-API-in-Python">&#182;</a></h2><p>Once you have your Twitter app set-up, you are ready to access tweets in Python. Begin by importing the necessary Python libraries.</p>
-<p>To access the Twitter API, we'll need the following:</p>
-<ul>
-<li>consumer key</li>
-<li>consumer seceret key</li>
-<li>access token key</li>
-<li>access token secret key</li>
-</ul>
-<p>These keys are located in your Twitter app settings in the Keys and Access Tokens tab.</p>
-<h4 id="Note---do-not-share-these-keys-to-anyone!">Note - do not share these keys to anyone!<a class="anchor-link" href="#Note---do-not-share-these-keys-to-anyone!">&#182;</a></h4><p>First you will need define your keys:</p>
-<ul>
-<li><strong>consumer_key= 'yourkeyhere'</strong></li>
-<li><strong>consumer_secret= 'yourkeyhere'</strong></li>
-<li><strong>access_token= 'yourkeyhere'</strong></li>
-<li><strong>access_token_secret= 'yourkeyhere'</strong></li>
-</ul>
-<p>I stored my credentials in another py file and its part of .gitignore so that it doesn't push into my repo.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">tweepy</span> <span class="k">as</span> <span class="nn">tw</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">config</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">py</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">auth</span> <span class="o">=</span> <span class="n">tw</span><span class="o">.</span><span class="n">OAuthHandler</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">consumer_key</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">consumer_secret</span><span class="p">)</span>
-<span class="n">auth</span><span class="o">.</span><span class="n">set_access_token</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">access_token</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">access_token_secret</span><span class="p">)</span>
-<span class="n">api</span> <span class="o">=</span> <span class="n">tw</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">auth</span><span class="p">,</span> <span class="n">wait_on_rate_limit</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Sending a twit:</p>
-<p>To see the example please follow the link and look at the first post:</p>
-<p><a href="https://twitter.com/jaymanalastas">https://twitter.com/jaymanalastas</a></p>
-<p>After we run the command below, we'll commet it out so that it doesn't post multiple copies of it self.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># api.update_status(&quot;Check it out! I&#39;m tweeting from my #jupyter_notebok using #python! Go to my website to find out how: https://jaymanalastas.github.io/2019/11/twitter-api.html&quot;)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Search-twitters-for-tweets">Search twitters for tweets<a class="anchor-link" href="#Search-twitters-for-tweets">&#182;</a></h2><p>Next we'll collect data on tesla. First we need to create query parameters:</p>
-<ul>
-<li><ol>
-<li>Search term - in our case it'll be #tesla</li>
-</ol>
-</li>
-<li><ol>
-<li>Start date of our search</li>
-</ol>
-</li>
-</ul>
-<p><strong>Please note</strong> that Twitter's API only allows access to past few weeks of tweets, so we can't dig too much into the data.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">search_words</span> <span class="o">=</span> <span class="s1">&#39;#tesla&#39;</span>
-<span class="n">new_search</span> <span class="o">=</span> <span class="n">search_words</span> <span class="o">+</span> <span class="s2">&quot;-filter:retweets&quot;</span> <span class="c1"># this filters all retweets from our search</span>
-<span class="n">date_since</span> <span class="o">=</span> <span class="s1">&#39;2019-10-01&#39;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Blow we created a script to query data from our parameter. We'll also use <strong>_tweet.user.screen<em>name and tweet.user.location</em></strong> to get the location and screen name of our data.</p>
-<p>The reason is to filter out duplicate users and only take into account unique posters. The we transform the data into a data frame to do a little bit of EDA.</p>
-<p>We'll iterate through 1000 posts.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweets</span> <span class="o">=</span> <span class="n">tw</span><span class="o">.</span><span class="n">Cursor</span><span class="p">(</span><span class="n">api</span><span class="o">.</span><span class="n">search</span><span class="p">,</span>
-                  <span class="n">q</span><span class="o">=</span><span class="n">new_search</span><span class="p">,</span>
-                  <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span>
-                  <span class="n">since</span><span class="o">=</span><span class="n">date_since</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
-
-<span class="n">users_locs</span> <span class="o">=</span> <span class="p">[[</span><span class="n">tweet</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">screen_name</span><span class="p">,</span> <span class="n">tweet</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">location</span><span class="p">]</span> <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">users_locs</span><span class="p">,</span>
-                       <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;location&#39;</span><span class="p">])</span>
-<span class="n">tweet_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>users</th>
-      <th>location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>alanyc1990</td>
-      <td>Downtown, Brooklyn</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>mithucanada</td>
-      <td>Toronto Canada</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>grandfloridian5</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>electriccargirl</td>
-      <td>Oregon Coast</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>cleanenergywire</td>
-      <td>Berlin</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>facts_tesla</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>LuvMyModel3</td>
-      <td>Grapevine, TX</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>lklundin</td>
-      <td>Greater Munich area</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>loky080659</td>
-      <td>World</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>IndecentP3D</td>
-      <td>Fort Lauderdale, FL</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">tweet_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;location&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;users&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">df</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[36]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>users</th>
-    </tr>
-    <tr>
-      <th>location</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th></th>
-      <td>102</td>
-    </tr>
-    <tr>
-      <th>California, USA</th>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th>Greater Munich area</th>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>Toronto, Ontario</th>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>London, England</th>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>Canada</th>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>Santa Barbara, CA</th>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>World</th>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>Germany</th>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>Brussels</th>
-      <td>7</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Customizing-Twitter-Queries">Customizing Twitter Queries<a class="anchor-link" href="#Customizing-Twitter-Queries">&#182;</a></h2><p>Please checkout the second link on the credits below to see more of Twitter search query options.</p>
-<p>For example, if we search for '<strong>#trump :(</strong>' our query will search for all #trump with a negative attitude.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">search_trump</span> <span class="o">=</span> <span class="s1">&#39;#trump :)&#39;</span> <span class="o">+</span> <span class="s2">&quot;-filter:retweets&quot;</span>
-
-<span class="n">tweets</span> <span class="o">=</span> <span class="n">tw</span><span class="o">.</span><span class="n">Cursor</span><span class="p">(</span><span class="n">api</span><span class="o">.</span><span class="n">search</span><span class="p">,</span>
-                  <span class="n">q</span><span class="o">=</span><span class="n">search_trump</span><span class="p">,</span>
-                  <span class="n">lang</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
-                  <span class="n">since</span><span class="o">=</span><span class="s1">&#39;2019-10-1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-
-<span class="n">pos_trump</span> <span class="o">=</span> <span class="p">[[</span><span class="n">tweet</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">screen_name</span><span class="p">,</span> <span class="n">tweet</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="n">tweet</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">location</span><span class="p">]</span> <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_trump</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">pos_trump</span><span class="p">,</span>
-                       <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;location&#39;</span><span class="p">])</span>
-<span class="n">df_trump</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[59]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>users</th>
-      <th>text</th>
-      <th>location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Fairview360</td>
-      <td>@GissiSim The only article I could find was a ...</td>
-      <td>Tuzla, Bosnia and Herzegovina</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>a982612</td>
-      <td>#Trump Sucks Fatballs in #Russia :D</td>
-      <td>Erdkern</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>faidr</td>
-      <td>In US this happens everywhere, it’s not #Trump...</td>
-      <td>Athens, Greece</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>linda_laman</td>
-      <td>@ClaryceQ @KathiYacobozzi took me an hr to sig...</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>linda_laman</td>
-      <td>@nichal111 it took me 1 hr to sign in ! they d...</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>FlooringMatches</td>
-      <td>Dr Evil needs door bars too...\n\nSign up for ...</td>
-      <td>Brixham, Devon</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>a982612</td>
-      <td>#Trump Sucks Fatballs in #Russia :D</td>
-      <td>Erdkern</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>LadyDragon13</td>
-      <td>PEOPLE HAPPY TO SEE DONALD :)\n\n@POTUS #8CHAN...</td>
-      <td>Montréal, Québec</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>VotingFemaIe</td>
-      <td>Liberals At LSU Alabama Game Got Their UK Baby...</td>
-      <td>Phoenix, Arizona</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Cybts1</td>
-      <td>So I guess this time his people will make the ...</td>
-      <td>The Garden State</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_trump</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[57]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>users                                                wmagates
-text        Groper In Chief: Donald #Trump Allegedly Hid B...
-location                                                     
-Name: 9, dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Part-II-of-Twitter's-API">Part II of Twitter's API<a class="anchor-link" href="#Part-II-of-Twitter's-API">&#182;</a></h2><p>The next part will analyze the frequency of words in a tweet.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Credits:">Credits:<a class="anchor-link" href="#Credits:">&#182;</a></h3><ul>
-<li><a href="https://developer.twitter.com">https://developer.twitter.com</a></li>
-<li><a href="https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/standard-operators">https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/standard-operators</a></li>
-<li><a href="https://www.earthdatascience.org/courses/earth-analytics-python/using-apis-natural-language-processing-twitter/get-and-use-twitter-data-in-python/">https://www.earthdatascience.org/courses/earth-analytics-python/using-apis-natural-language-processing-twitter/get-and-use-twitter-data-in-python/</a></li>
-<li><a href="https://github.com/tweepy/tweepy/blob/master/tweepy/api.py">https://github.com/tweepy/tweepy/blob/master/tweepy/api.py</a></li>
-</ul>
-
+<h4 id="Occam's-razor-----whenever-possbile,-choose-the-simnplest-answer-to-a-problem">Occam's razor  -  whenever possbile, choose the simnplest answer to a problem<a class="anchor-link" href="#Occam's-razor-----whenever-possbile,-choose-the-simnplest-answer-to-a-problem">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -1866,7 +1274,7 @@ Name: 9, dtype: object</pre>
 </div>
  
 
-
+</body>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
@@ -1896,69 +1304,10 @@ Name: 9, dtype: object</pre>
 }
 </script>
 
-            </section>
-
-            <section class="post-info">
-                <div class="post-share">
-                    <a class="twitter" href="https://twitter.com/share?text=Twitter API Part I&amp;url=/2019/11/twit1.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
-                    </a>
-                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/2019/11/twit1.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
-                    </a>
-                    <a class="googleplus" href="https://plus.google.com/share?url=/2019/11/twit1.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
-                    </a>
-                    <div class="clear"></div>
-                </div>
-
-                <aside class="post-tags">
-<a href="/tag/data">data</a><a href="/tag/python">python</a><a href="/tag/api">api</a><a href="/tag/twitter">twitter</a>                </aside>
-
-                <div class="clear"></div>
-
-                <aside class="post-author">
-
-
-                        <figure class="post-author-avatar">
-                            <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/32116880_1706492836107970_5050193142737797120_n.jpg?_nc_cat=100&_nc_oc=AQnUu86SIuWc8dbN_NFqGBKYnzo5jjXcgNSWtb_hNOhzzQra0aX4Mi8smxWgQ4bH4W8&_nc_ht=scontent-atl3-1.xx&oh=fc0de1663d18f594433c271f86b61a65&oe=5E44A57C" alt="John Manalastas" />
-                        </figure>
-                    <div class="post-author-bio">
-                        <h4 class="post-author-name"><a href="/author/john-manalastas">John Manalastas</a></h4>
-                            <p class="post-author-about">Analyst looking to leverage my passion for learning and analyzing trends to produce actionable analysis to executives.</p>
-                            <span class="post-author-location"><i class="ic ic-location"></i> Orlando, FL</span>
-                        <!-- Social linkes in alphabet order. -->
-                            <span class="post-author-github"><a target="_blank" href="https://github.com/jaymanalastas"><i class="ic ic-link"></i> GitHub</a></span>
-                            <span class="post-author-linkedin"><a target="_blank" href="https://www.linkedin.com/in/jaymanalastas/"><i class="ic ic-link"></i> LinkedIn</a></span>
-                            <span class="post-author-twitter"><a target="_blank" href="https://twitter.com/jaymanalastas"><i class="ic ic-twitter"></i> Twitter</a></span>
-                    </div>
-                    <div class="clear"></div>
-                </aside>
-
-                </section>
-
-
-                <aside class="post-nav">
-                    <a class="post-nav-next" href="/2019/11/twitII.html">
-                        <section class="post-nav-teaser">
-                            <i class="ic ic-arrow-left"></i>
-                                <h2 class="post-nav-title">Twitter API Part II</h2>
-                            <p class="post-nav-excerpt">Analyzing word frequency counts using twitter data and tweepy in python</p>
-                        </section>
-                    </a>
-                    <a class="post-nav-prev" href="/2019/10/nlp.html">
-                        <section class="post-nav-teaser">
-                            <i class="ic ic-arrow-right"></i>
-                                <h2 class="post-nav-title">Natural Language Processing</h2>
-                            <p class="post-nav-excerpt">Natural Language Processing, usually shortened as NLP, is a branch of artificial...</p>
-                        </section>
-                    </a>
-                    <div class="clear"></div>
-                </aside>
-
-            </div>
-        </article>
-    </main>
+          </section>
+      </div>
+      </article>
+  </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
